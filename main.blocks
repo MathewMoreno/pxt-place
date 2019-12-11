@@ -1,0 +1,84 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="8f$.E}9-LhDE~-pJ=`XQ">Dog</variable><variable id=":tc$|whubkbL?b|KZc?%">mySprite</variable><variable id="JqZikI1d]tb=f:C)`7_1">Message</variable><variable id="tZHFjZt6`1igW:Dd`3~y">Bard</variable><variable id="EDeIRIAWzfRm#_)57sYN">SwordsWoman</variable><variable id="Ar`}bpFOs==XEX*lRxA%">Small Dragon</variable><variable id="mTopGn]h(uK}uN$Mx}W}">Knight</variable><variable id="+E~$5*!]~uY*uvfixTW6">Enemy1</variable><variable id="fU%#U|Aw+8T*SKOdI7HD">myEnemy</variable><variable type="KIND_SpriteKind" id="q[mGsQnt]gZ:=cir{]p%">Player</variable><variable type="KIND_SpriteKind" id="FK!:DG!SX)1C:0p8eUpn">Projectile</variable><variable type="KIND_SpriteKind" id="*2qi*_J_Zn--F$.Tc@V;">Food</variable><variable type="KIND_SpriteKind" id="kz@GXm-iXhyVsuD5meZT">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">9</field></shadow></value><next><block type="variables_set"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . 5 . 5 . . . . . . . 
+. . . . . f 5 5 5 f f . . . . . 
+. . . . f 8 5 2 5 8 a f . . . . 
+. . . f 8 a a a a a 8 a f . . . 
+. . . f a a f f f f a 8 f . . . 
+. . . f a f f d d f f a f . . . 
+. . f a f d f d d f d f a f . . 
+. . f a f d 3 d d 3 d f a f . . 
+. . f a a f d d d d f a a f . . 
+. f a a f 3 f f f f 3 f a a f . 
+. . f f d 3 b 3 3 b 3 d f f . . 
+. . f d d f 3 b b 3 f d d f . . 
+. . . f f 3 3 3 3 3 3 f f . . . 
+. . . f 3 3 b 3 3 b 3 3 f . . . 
+. . . f f f f f f f f f f . . . 
+. . . . . f f . . f f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">117</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">25</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field></block></value><next><block type="variables_set"><field name="VAR" id="JqZikI1d]tb=f:C)`7_1">Message</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="text"><field name="TEXT">I'm ready to heal</field></block></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Hello</field></shadow><block type="variables_get"><field name="VAR" id="JqZikI1d]tb=f:C)`7_1">Message</field></block></value><next><block type="hudSetLife"><value name="value"><shadow type="math_number"><field name="NUM">1</field></shadow></value><next><block type="variables_set"><field name="VAR" id="EDeIRIAWzfRm#_)57sYN">SwordsWoman</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . f c 
+. . . . f f f f f . f f c f 
+. . . f f c c c c f f c f f 
+. . f f b c c c c b f f c c 
+. f f c 3 c c c c 3 c f f f 
+. f 3 3 c c c c c c 3 3 f . 
+. f c c c c 4 4 c c c c . b 
+. . f c c 4 4 4 4 c c f . b 
+. . . f b f 4 4 f b f . b c 
+. . f 4 1 f d d f 1 . b c b 
+. . . f d d d d d c c c e . 
+. f e f f b b b e e b c e . 
+. e 4 f b 3 3 3 e b e c . . 
+. . . f 6 6 6 6 b b b . . . 
+. . . f f f f f b b . . . . 
+. . . f f f . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="EDeIRIAWzfRm#_)57sYN">SwordsWoman</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">40</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">40</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="EDeIRIAWzfRm#_)57sYN">SwordsWoman</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Lets slay those demons</field></shadow></value><next><block type="variables_set"><field name="VAR" id="Ar`}bpFOs==XEX*lRxA%">Small Dragon</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . 2 2 2 
+. 2 2 2 2 . . . . . . . 2 2 2 2 
+2 f f 2 2 2 . . . . 2 2 2 4 4 4 
+2 5 f 2 2 2 . . 2 2 2 4 4 2 2 2 
+2 2 2 2 f 2 2 2 2 2 2 2 2 4 4 4 
+2 f f f 2 2 4 2 2 2 2 2 2 2 2 2 
+. 2 2 2 2 2 2 4 4 4 2 2 . . . . 
+. . . 2 2 2 2 2 2 2 4 4 4 2 2 . 
+. . 2 4 2 . . . 2 2 2 2 4 4 4 4 
+. . 2 4 2 . . . 2 2 . . . . . 4 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="Ar`}bpFOs==XEX*lRxA%">Small Dragon</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">124</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">92</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="Ar`}bpFOs==XEX*lRxA%">Small Dragon</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Growl* Growl*</field></shadow></value><next><block type="variables_set"><field name="VAR" id="mTopGn]h(uK}uN$Mx}W}">Knight</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . c c c c . . . . 
+. . b c c b b c c b . . 
+. c c b b b b b c c c . 
+c c b b b b b b b b c c 
+c b b b b b b b b b b c 
+b b b b b b b b b b b b 
+b b b b b b b b b b b b 
+b b 4 f f 4 4 f f b b b 
+b b 4 d d d d d d b b b 
+. f e d d b b d d e f . 
+. f f e 4 4 4 4 c c c c 
+b 4 f b 1 1 1 c b b b b 
+b b f 1 1 1 1 c b b d b 
+4 b b 6 6 6 6 c b b b b 
+. . b f f f f f c c c c 
+. . . f f . . f f . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value></block></value><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="mTopGn]h(uK}uN$Mx}W}">Knight</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">35</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">89</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="mTopGn]h(uK}uN$Mx}W}">Knight</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Lets Go!!!</field></shadow></value><next><block type="variables_set"><field name="VAR" id="+E~$5*!]~uY*uvfixTW6">Enemy1</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . 2 . . . . . 2 . . . . . 
+. . . . 4 2 . . . . 4 2 . . . . 
+. . . . 2 4 2 2 2 2 2 4 . . . . 
+. . . 2 2 2 2 2 2 2 2 2 2 . . . 
+. . . 2 4 2 5 2 2 2 5 2 2 . . . 
+. . 2 2 4 2 5 5 2 5 5 2 2 2 . . 
+. . 2 4 2 2 2 2 2 2 2 2 4 2 . . 
+. . 2 4 2 5 5 2 2 2 5 5 2 4 . . 
+. . 2 4 2 2 5 5 5 5 5 2 2 2 . . 
+. . 2 4 4 4 2 2 2 2 2 2 2 2 . . 
+. . . 2 2 2 4 4 2 2 2 2 2 . . . 
+. . . . 2 2 2 4 4 4 4 2 . . . . 
+. . 2 2 2 4 4 4 2 2 2 2 2 2 . . 
+. . 4 . 2 2 2 4 4 2 2 2 . 4 . . 
+. . 2 . 2 2 2 2 4 4 4 2 . 2 . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="spritesoverlap" x="520" y="20"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></block></value><next><block type="hudChangeLifeBy"><value name="value"><shadow type="math_number"><field name="NUM">-1</field></shadow></value></block></next></block></statement></block><block type="spritesoverlap" x="520" y="220"><value name="HANDLER_DRAG_PARAM_sprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">sprite</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Projectile</field></shadow></value><value name="HANDLER_DRAG_PARAM_otherSprite"><shadow type="argument_reporter_custom"><mutation typename="Sprite"/><field name="VALUE">otherSprite</field></shadow></value><value name="otherKind"><shadow type="spritekind"><field name="MEMBER">Enemy</field></shadow></value><statement name="HANDLER"><block type="spritedestroy"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="+E~$5*!]~uY*uvfixTW6">Enemy1</field></block></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field></block></value><value name="text"><shadow type="text"><field name="TEXT">Yay!</field></shadow></value></block></next></block></statement></block><block type="gameinterval" x="140" y="1000"><value name="period"><shadow type="timePicker"><field name="ms">500</field></shadow></value><statement name="HANDLER"><block type="spriteFollowOtherSprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="+E~$5*!]~uY*uvfixTW6">Enemy1</field></block></value><value name="target"><block type="variables_get"><field name="VAR" id="tZHFjZt6`1igW:Dd`3~y">Bard</field></block></value><value name="speed"><shadow type="math_number"><field name="NUM">50</field></shadow></value></block></statement></block></xml>
