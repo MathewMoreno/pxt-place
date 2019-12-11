@@ -1,6 +1,7 @@
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     Enemy1.destroy()
     Bard.say("Yay!")
+    game.over(true)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     sprite.destroy()
@@ -108,6 +109,7 @@ Enemy1 = sprites.create(img`
 . . 4 . 2 2 2 4 4 2 2 2 . 4 . . 
 . . 2 . 2 2 2 2 4 4 4 2 . 2 . . 
 `, SpriteKind.Enemy)
-game.onUpdateInterval(500, function () {
-    Enemy1.follow(Bard, 50)
+game.onUpdate(function () {
+    Enemy1.y += controller.dx()
+    Enemy1.x += controller.dy()
 })
